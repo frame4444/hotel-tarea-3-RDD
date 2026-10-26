@@ -1,0 +1,19 @@
+<form class="formulario panel" method="post" action="/registro">
+<h1>Registro</h1>
+<input type="hidden" name="siguiente" value="$siguiente">
+<h3>Cuenta</h3>
+<div class="fila">
+<label class="campo ancho">Correo<input type="email" name="correo" value="$correo" placeholder="Correo electrónico" required></label>
+<label class="campo ancho">Contraseña<input type="password" name="clave" placeholder="Contraseña (mínimo 8 caracteres)" minlength="8" required></label>
+<label class="campo ancho"><input type="password" name="confirmacion" placeholder="Confirmar contraseña" required></label>
+</div>
+<h3>Información Personal</h3>
+<div class="fila">
+<label class="campo">Nombre<input name="nombre" value="$nombre" placeholder="Nombre" required></label>
+<label class="campo">Apellidos<input name="apellidos" value="$apellidos" placeholder="Apellidos" required></label>
+<label class="campo">Identificación<input name="identificacion" value="$identificacion" placeholder="Identificación" required></label>
+<label class="campo">Número telefónico<input name="telefono" value="$telefono" placeholder="Número telefónico" required></label>
+<label class="campo">Tipo de identificación<select name="tipo_identificacion">$tipos</select></label>
+</div>
+<div class="derecha"><button class="boton">Registrarse</button></div>
+</form>

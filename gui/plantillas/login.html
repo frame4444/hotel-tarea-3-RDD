@@ -1,0 +1,11 @@
+<form class="formulario panel" method="post" action="/login">
+<h1>Iniciar sesión</h1>
+<input type="hidden" name="siguiente" value="$siguiente">
+<h3>Cuenta</h3>
+<div class="fila">
+<label class="campo ancho">Correo<input type="email" name="correo" value="$correo" placeholder="Correo electrónico" required></label>
+<label class="campo ancho">Contraseña<input type="password" name="clave" placeholder="Contraseña" required></label>
+</div>
+<button class="boton">Ingresar</button>
+<p class="nota">¿No tiene cuenta? <a href="/registro?siguiente=$siguiente_url">Regístrese</a></p>
+</form>

@@ -1,0 +1,18 @@
+<form class="reserva" method="post" action="/reservar">
+<section>
+<div class="dos">
+<div><h3>Detalles</h3><ul>$detalles</ul><h3>Extras</h3><ul>$extras</ul></div>
+<div><h3>Descripción</h3><p>$descripcion</p></div>
+</div>
+</section>
+<section class="panel">$panel</section>
+<aside class="col-fechas">
+<h3>Fechas</h3>
+<label class="campo">Entrada<input type="date" name="entrada" min="$hoy" value="$entrada"></label>
+<label class="campo">Salida<input type="date" name="salida" min="$hoy" value="$salida"></label>
+<label class="campo">Habitaciones disponibles<select name="habitacion">$opciones</select></label>
+<button class="boton" name="accion" value="disponibilidad" formnovalidate>Ver disponibilidad</button>
+<div class="resumen">$resumen</div>
+<button class="boton grande" name="accion" value="reservar">Reservar</button>
+</aside>
+</form>
